@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".RegActivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/kit_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户注册"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:src="@mipmap/snackshop_icon"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/username_reg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ed_back"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="用户名："/>
+    <TextView
+        android:id="@+id/tip_u"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名不能为空"
+        android:textSize="12sp"
+        android:textColor="@color/red_plus"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/password_reg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ed_back"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="密码："/>
+    <TextView
+        android:id="@+id/tip_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码不能为空"
+        android:textSize="12sp"
+        android:textColor="@color/red_plus"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/red"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>
